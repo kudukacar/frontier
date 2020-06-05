@@ -1,10 +1,10 @@
 ## Site
-[Live] (https://frontierr.herokuapp.com/)
+[Live](https://frontierr.herokuapp.com/)
 
 ## Run the program locally
-1. [Install Ruby 2.6.5] (https://www.ruby-lang.org/en/documentation/installation/)
-2. [Install Node 12.16.3] (https://nodejs.org/en/download/package-manager/)
-3. [Install PostgreSQL 11] (https://postgresapp.com/)
+1. [Install Ruby 2.6.5](https://www.ruby-lang.org/en/documentation/installation/)
+2. [Install Node 12.16.3](https://nodejs.org/en/download/package-manager/)
+3. [Install PostgreSQL 11](https://postgresapp.com/)
 4. Make sure PostgreSQL is running 
 5. In your terminal, navigate to the project folder
 6. Type the following in the terminal: gem install bundler
