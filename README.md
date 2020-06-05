@@ -1,16 +1,18 @@
 ## Site
-[Live] ()
+[Live] (https://frontierr.herokuapp.com/)
 
 ## Run the program locally
 1. [Install Ruby 2.6.5] (https://www.ruby-lang.org/en/documentation/installation/)
-2. [Install Node 12.16.3] (https://nodejs.org/en/download/package-manager/) 
-3. In your terminal, navigate to the project folder
-4. Type the following in the terminal: gem install bundler
-5. Type the following in the terminal after the above executes: bundle install
-6. Type the following in the terminal:  npm install  
-7. Type the following in the terminal after the above executes: npm run webpack
-8. Type the following in another terminal in the project folder: bundle exec rails s
-9. Go to localhost:3000 in your browser
+2. [Install Node 12.16.3] (https://nodejs.org/en/download/package-manager/)
+3. [Install PostgreSQL 11] (https://postgresapp.com/)
+4. Make sure PostgreSQL is running 
+5. In your terminal, navigate to the project folder
+6. Type the following in the terminal: gem install bundler
+7. Type the following in the terminal after the above executes: bundle install
+8. Type the following in the terminal:  npm install  
+9. Type the following in the terminal after the above executes: npm run webpack
+10. Type the following in another terminal in the project folder: bundle exec rails s
+11. Go to localhost:3000 in your browser
  
 ## Technologies
   * React
