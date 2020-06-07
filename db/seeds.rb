@@ -11,7 +11,7 @@ Indicator.destroy_all
 Code.destroy_all
 Country.destroy_all
 
-Country.create(name: "China", code: "CHN")
+country = Country.create(name: "China", code: "CHN")
 
 header = nil
 length = nil
@@ -26,7 +26,7 @@ CSV.foreach(Rails.root.join('db/WBCHN.csv')).with_index do |row, i|
     code = Code.create(name: name, code: code)
     (2...length).each do |column|
       if row[column] != nil
-        Indicator.create(year: header[column].to_i, value: row[column], country_id: Country.find_by(name: 'China').id, code_id: code.id)
+        Indicator.create(year: header[column].to_i, value: row[column], country_id: country.id, code_id: code.id)
       end
     end
   end
