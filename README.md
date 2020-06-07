@@ -32,11 +32,11 @@
 ## Considerations
  
 ### Schema
-I stored the number values as strings because they varied in precision, and a string seemed like the simplest way to maintain data integrity.  I stored the year as an integer instead of a date because I had no insight into other date details (month, day).  I included another table, countries, to reference the country associated with each indicator.  In theory, we could have other tables holding information about the indicator code, and its components (topic, general subject, specific subject, etc.), but this approach may be beyond the scope of this project.
+I stored the number values as strings because they varied in precision, and a string seemed like the simplest way to maintain data integrity.  I stored the year as an integer instead of a date because I had no insight into other date details (month, day).  I included another table, countries, to reference the country associated with each indicator, and another table, codes, to reference the indicator code and name.  In theory, we could have other tables holding information about the indicator code, and its components (topic, general subject, specific subject, etc.), but this approach may be beyond the scope of this project.
  
 ### Data Parsing
-I only included cells with values in the database, as cells without values provide no meaningful information, and takes space.  The parsing script takes O(m*n) time, which is not ideal especially for large data sets.  I used Rails ORM, instead of insert statements, to interact with the database. 
+The parsing script takes O(m*n) time, which is not ideal especially for large data sets.  I used Rails ORM, instead of insert statements, to interact with the database. 
  
 ### Display page
-Fetching and formatting of this data set takes time (hence the ...Loading signal).  The time complexity of the display script is O(nlogn) due to sorting the indicators.  I fetched the data in one batch, but to reduce loading and formatting time, I could fetch and format the data in batches.
+I only included cells with values in the database, as cells without values provide no meaningful information, and takes space.  Fetching and formatting of this data set takes time (hence the ...Loading signal).  The time complexity of the display script is O(nlogn) due to sorting the indicators.  I fetched the data in one batch, but to reduce loading and formatting time, I could fetch and format the data in batches.
 
