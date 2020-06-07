@@ -12,7 +12,8 @@
 8. Type the following in the terminal:  npm install  
 9. Type the following in the terminal after the above executes: npm run webpack
 10. Type the following in another terminal in the project folder: bundle exec rails s
-11. Go to localhost:3000 in your browser
+11. Type the following in another terminal in the project folder: bundle exec rails db:setup
+12. Go to localhost:3000 in your browser
  
 ## Technologies
   * React
